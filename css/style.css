@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* Start header */
+.main {
+    width: 100%;
+}
+.main .container {
+    padding: 10px;
+}
+.main .container .header {
+    padding: 10px;
+}
+.main .container .header i.fa-bars {
+    color : #f00;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.main .container .header .author {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid #f56a6a;
+    width: 95%;
+    margin: auto;
+}
+.main .container .header .author .hed {
+    color: #444;
+    font-size: 18px;
+    font-weight: 400;
+}
+.main .container .header .author .hed:hover {
+    color: #ec4c4c;
+}
+.main .container .header .author .icons a {
+    color: #888;
+}
+.main .container .header .author .icons a i {
+    font-size: 18px;
+    padding: 10px;
+    margin-left: 4px;
+}
+/* End header */
+
+/* Start banner */
+.main .container .banner {
+    margin-top: 10px;
+}
+.main .container .banner .container {
+    width: 90%;
+    margin: auto;
+    border-bottom: 2px solid #c5bbbb;
+}
+.main .container .banner .container .content {
+    display: flex;
+    justify-content: space-between;
+}
+.main .container .banner .container .content .text {
+    width: 50%;
+}
+.main .container .banner .container .content .text h1 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #444;
+}
+.main .container .banner .container .content .text p {
+    font-size: 18px;
+    color: #817878;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.main .container .banner .container .content .text p:nth-of-type(2) {
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 400;
+}
+.main .container .banner .container .content .text button {
+    padding: 10px 30px;
+    background-color: #FFF;
+    border: 2px solid #f56a6a;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    font-size: 15px;
+    color: #d84848;
+    font-weight: 700;
+}
+.main .container .banner .container .content .image {
+    width: 50%;
+}
+.main .container .banner .container .content .image img {
+    width: 100%;
+    border-radius: 5px;
+}
+/* End banner */
+
+/* Start features */
+.features {
+    margin-top: 10px;
+}
+.features .container {
+    width: 90%;
+    margin: auto;
+    border-bottom: 2px solid #c5bbbb;
+    padding: 10px;
+}
+.features .container h1 {
+    color: #444;
+    font-size: 30px;
+    font-weight: 700;
+    border-bottom: 3px solid #ec4c4c;
+    display: inline-block;
+    padding-bottom: 6px;
+}
+.features .container ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-top: 40px;
+}
+.features .container ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 50%;
+    max-width: 50%;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+.features .container ul li i {
+    flex-basis: 25%;
+    max-width: 25%;
+    font-size: 40px;
+    color: #ec4c4c;
+}
+.features .container ul li .contnt {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+.features .container ul li .contnt h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #444;
+    margin-bottom: 20px;
+}
+.features .container ul li .contnt p {
+    font-size: 17px;
+    color: #666;
+    width: 80%;
+    line-height: 1.7;
+}
+/* End features */
+
+/* Start posts */
+.posts {
+    margin-top: 20px;
+}
+.posts .container {
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+}
+.posts .container h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #444;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ec4c4c;
+    display: inline-block;
+    padding-bottom: 6px;
+}
+.posts .container .contnt {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.posts .container .contnt .post {
+    flex-basis: 50%;
+    max-width: 50%;
+    border-right: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+    padding: 30px 30px;
+}
+.posts .container .contnt .post:nth-of-type(2) ,
+.posts .container .contnt .post:nth-of-type(4) {
+    border-right: none;
+}
+.posts .container .contnt .post:nth-of-type(3) ,
+.posts .container .contnt .post:nth-of-type(4) {
+    border-bottom: none;
+}
+.posts .container .contnt .post .figure {
+    overflow: hidden;
+    border-radius: 5px;
+}
+.posts .container .contnt .post .figure img {
+    width: 100%;
+    transition: transform 2s ease-in-out;
+}
+.posts .container .contnt .post h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #444;
+    font-size: 25px;
+    font-weight: 700;
+}
+.posts .container .contnt .post p {
+    color: #af9696;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.posts .container .contnt .post button {
+    padding: 10px 30px;
+    text-transform: uppercase;
+    background-color: #FFF;
+    border: 2px solid #F56A6A;
+    border-radius: 6px;
+    cursor: pointer;
+    outline: none;
+    font-size: 15px;
+    font-weight: 700;
+    color: #F89172;
+}
+.posts .container .contnt .post .figure img:hover {
+    transform: scale(1.1);
+}
+
+/* End posts */
+
+/* Start responsive style */
+
+@media only screen and (max-width:992px) {
+    /* Start header */
+    .main .container .header i.fa-bars {
+        color : #f00;
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        cursor: pointer;
+        position: fixed;
+        background-color: #DDD;
+        padding: 10px 20px;
+        border-radius: 5px;
+        opacity: .7;
+    }
+    .main .container .header .author {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+        padding-bottom: 10px;
+        border-bottom: 5px solid #f56a6a;
+        width: 95%;
+        margin: auto;
+    }
+    
+    /* End headder */
+
+    /* Start banner */
+    .main .container .banner .container {
+        width: 95%;
+        margin: auto;
+    }
+    .main .container .banner .container .content {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .main .container .banner .container .content .text {
+        width: 100%;
+    }
+    .main .container .banner .container .content .text h1 {
+        font-size: 30px;
+        display: inline;
+    }
+    .main .container .banner .container .content .text p {
+        font-size: 14px;
+    }
+    .main .container .banner .container .content .text p:nth-of-type(2) {
+        font-size: 15px;
+        line-height: 1.7;
+        letter-spacing: 1px;
+    }
+    .main .container .banner .container .content .image {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .main .container .banner .container .content .image img {
+        width: 100%;
+    }
+    /* End banner */
+
+    /* Start features */
+
+    .features .container h1 {
+        color: #444;
+        font-size: 23px;
+        font-weight: 700;
+        border-bottom: 3px solid #ec4c4c;
+        display: inline-block;
+        padding-bottom: 6px;
+    }
+    .features .container ul {
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .features .container ul li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-bottom: 0px;
+        padding: 10px;
+    }
+    .features .container ul li .contnt h2 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #444;
+        margin-bottom: 10px;
+    }
+    .features .container ul li .contnt p {
+        font-size: 15px;
+        color: #666;
+        width: 100%;
+        line-height: 1.7;
+    }
+
+    /* End features */
+
+    /* Start Posts */
+    .posts .container {
+        width: 100%;
+    }
+    .posts .container h1 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #444;
+        margin-bottom: 20px;
+        border-bottom: 3px solid #ec4c4c;
+        display: inline-block;
+        padding-bottom: 6px;
+    }
+    .posts .container .contnt .post h2 {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        color: #444;
+        font-size: 17px;
+        font-weight: 700;
+    }
+    .posts .container .contnt .post p {
+        color: #af9696;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .posts .container .contnt .post button {
+        padding: 10px 30px;
+        text-transform: uppercase;
+        background-color: #FFF;
+        border: 2px solid #F56A6A;
+        border-radius: 6px;
+        cursor: pointer;
+        outline: none;
+        font-size: 13px;
+        font-weight: 700;
+        color: #F89172;
+    }
+    /* End Posts */
+}
+
+/* End responsive style */
